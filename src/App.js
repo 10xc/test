@@ -9,7 +9,7 @@ import Detail from "./routes/Detail";
 function App() {
   return <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
-      <Route element={<Home />}/>
+      <Route path="/" element={<Home />}/>
       <Route path="/movie/:id" element={<Detail />}/>
     </Routes>
   </BrowserRouter>
